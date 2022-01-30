@@ -1,4 +1,4 @@
-# template-typescript-node
+# ts-node
 
 an opinionated typescript template for node projects with batteries included
 
