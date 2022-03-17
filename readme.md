@@ -14,5 +14,5 @@ an opinionated typescript template for node projects with batteries included
 
 1. clone
 2. do your thing
-3. `yarn dev` to start `src/index.ts` without compiling
-4. `yarn build` to compile
+3. `npm run dev` to start `src/index.ts` without compiling
+4. `npm run build` to compile
