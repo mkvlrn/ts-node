@@ -1,4 +1,4 @@
-import { sum } from './sum'
+import { sum } from './sum';
 
 // eslint-disable-next-line no-console
-console.log(sum(1, 2))
+console.log(sum(1, 2));
