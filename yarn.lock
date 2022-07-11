@@ -730,10 +730,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@mkvlrn/eslint-config@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@mkvlrn/eslint-config/-/eslint-config-8.0.0.tgz#ac0caa95124fe73758651add149f6f00dc2c4de3"
-  integrity sha512-byoJcsWUxj7xHrowbZWjl580PAvVN5UJHkHc2oHFpLBl84yWMgLuGktdTJ261uwTH66hIuZJ/EGCdxU9ldBbJw==
+"@mkvlrn/eslint-config@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@mkvlrn/eslint-config/-/eslint-config-8.1.0.tgz#ecf535eeb923d6d41b000ca72282f03a545bfde2"
+  integrity sha512-uO2TykYRyx4PV+eYmEweXDMsJgsMm5+nOT3LxwyD79WrdX6VHG1vLVAIlelyHht+7UV0hxlEvt0HVrMLESwN5g==
 
 "@mkvlrn/prettier-config@^3.0.0":
   version "3.0.0"
