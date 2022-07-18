@@ -474,10 +474,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@gigachad-script/eslint-config@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@gigachad-script/eslint-config/-/eslint-config-1.1.1.tgz#0e13c5e2383b650a7e123622315191d372629cef"
-  integrity sha512-JmiN57i+zH3Dpw55yoNIN2+eH5/9jAeMaVkPn162Qw1Ojof/49by9fZqvzsDBL9SAC3pXpXPMaF+MHB3z9gCcg==
+"@gigachad-script/eslint-config@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@gigachad-script/eslint-config/-/eslint-config-1.2.2.tgz#1109f8e720732e7a300c39ff7246e41f0e221cf8"
+  integrity sha512-jfiDJQKZtxvMp/BsXRYnHJP7jH1Zc8/ka3pq+AUSsLro6bQBf38xdTcoDBcMv2TrRxdefniSDoEHMSeTjFFcyQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.30.6"
     "@typescript-eslint/parser" "^5.30.6"
