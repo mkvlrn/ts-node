@@ -23,7 +23,7 @@
     "jest": true
   },
   "settings": {
-    "importer/resolver": {
+    "import/resolver": {
       "typescript": {}
     },
     "jest": {
