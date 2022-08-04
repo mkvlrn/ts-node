@@ -1,8 +1,53 @@
 {
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "ecmaVersion": "latest",
+    "project": "./tsconfig.json",
+    "sourceType": "module"
   },
   "extends": [
-    "@gigachad-script"
-  ]
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "prettier"
+  ],
+  "plugins": [
+    "jest"
+  ],
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "settings": {
+    "importer/resolver": {
+      "typescript": {}
+    },
+    "jest": {
+      "version": "latest"
+    }
+  },
+  "ignorePatterns": [
+    "node_modules",
+    "build",
+    "coverage"
+  ],
+  "rules": {
+    "no-underscore-dangle": "off",
+    "import/prefer-default-export": "off",
+    "class-methods-use-this": "off",
+    "jest/expect-expect": [
+      "error",
+      {
+        "assertFunctionNames": [
+          "expect",
+          "request.**.expect",
+          "sut.**.expect"
+        ]
+      }
+    ]
+  }
 }
