@@ -23,7 +23,7 @@
     "test": "jest --passWithNoTests",
     "prepare": "npx husky install",
     "git-hook-pre-commit": "npx lint-staged -v",
-    "git-hook-commit-msg": "npx --no -- commitlint --edit "
+    "git-hook-commit-msg": "npx --no -- commitlint --edit $1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
