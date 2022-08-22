@@ -18,32 +18,31 @@
     "url": "git@github.com:mkvlrn/ts-node"
   },
   "scripts": {
-    "dev": "npx tsnd src",
+    "dev": "tsnd src",
     "build": "npx tsc -p tsconfig.prod.json",
     "test": "jest --passWithNoTests",
     "prepare": "npx husky install",
-    "git-hook-pre-commit": "npx lint-staged -v",
-    "git-hook-commit-msg": "npx --no -- commitlint --edit $1"
+    "test:e2e": "jest --config jest.config.e2e.ts --passWithNoTests"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@types/jest": "^28.1.6",
-    "@types/node": "^18.6.3",
-    "@typescript-eslint/eslint-plugin": "^5.32.0",
-    "@typescript-eslint/parser": "^5.32.0",
-    "eslint": "^8.21.0",
+    "@types/jest": "^28.1.7",
+    "@types/node": "^18.7.9",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint": "^8.22.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-import-resolver-typescript": "^3.4.0",
+    "eslint-import-resolver-typescript": "^3.4.2",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.7.0",
+    "eslint-plugin-jest": "^26.8.7",
     "husky": "^8.0.1",
     "jest": "^28.1.3",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "ts-jest": "^28.0.7",
+    "ts-jest": "^28.0.8",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.7.4"
   }

@@ -1,4 +1,5 @@
 {
+  "root": true,
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -45,7 +46,8 @@
         "assertFunctionNames": [
           "expect",
           "request.**.expect",
-          "sut.**.expect"
+          "sut.**.expect",
+          "pactum.**.expect*"
         ]
       }
     ]

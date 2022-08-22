@@ -2,7 +2,6 @@
   "compilerOptions": {
     "module": "CommonJS",
     "target": "ESNext",
-    "rootDir": ".",
     "lib": [
       "DOM",
       "ESNext"
@@ -24,12 +23,8 @@
     "strict": true
   },
   "include": [
-    "src/**/*.ts",
-    "tests/**/*.ts",
-    "jest.config.ts",
-    "lint-staged.config.js"
-  ],
-  "exclude": [
-    "node_modules"
+    "src",
+    "test",
+    "*.config.*"
   ]
 }
