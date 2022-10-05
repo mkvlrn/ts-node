@@ -8,6 +8,6 @@ export default {
   testRegex: '.(spec|test).ts$',
   testEnvironment: 'node',
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
-    prefix: '<rootDir>',
+    prefix: '<rootDir>/..',
   }),
 };
