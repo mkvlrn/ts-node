@@ -1,13 +1,17 @@
+import { Config } from 'jest';
 import { pathsToModuleNameMapper } from 'ts-jest';
 
 import { compilerOptions } from './tsconfig.json';
 
-export default {
+const config: Config = {
+  passWithNoTests: true,
   preset: 'ts-jest',
-  rootDir: 'src',
-  testRegex: '.(spec|test).ts$',
+  rootDir: './',
+  testRegex: '.(spec|test).(ts|tsx)$',
   testEnvironment: 'node',
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
-    prefix: '<rootDir>/..',
+    prefix: '<rootDir>',
   }),
 };
+
+export default config;

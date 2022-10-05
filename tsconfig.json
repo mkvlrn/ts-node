@@ -3,12 +3,15 @@
     "module": "CommonJS",
     "target": "ESNext",
     "lib": [
-      "DOM",
       "ESNext"
     ],
-    "baseUrl": "src",
-    "paths": {},
-    "allowJs": true,
+    "baseUrl": "./",
+    "paths": {
+      "#supermath/*": [
+        "src/supermath/*"
+      ]
+    },
+    "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "emitDecoratorMetadata": true,
@@ -23,8 +26,13 @@
     "strict": true
   },
   "include": [
-    "src",
-    "test",
+    "./src",
+    "./test",
     "*.config.*"
-  ]
+  ],
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  }
 }

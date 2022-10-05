@@ -1,4 +1,5 @@
-import { sum } from './sum';
+import { AdvancedMath } from '#supermath/advanced-math';
 
-// eslint-disable-next-line no-console
-console.log(sum(1, 2));
+const math = new AdvancedMath();
+
+console.log(`210 x 2 = ${math.multiply(210, 2)}`);

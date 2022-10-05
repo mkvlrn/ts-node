@@ -16,5 +16,11 @@
         "parser": "json-stringify"
       }
     }
-  ]
+  ],
+  "importOrder": [
+    "^#(.*)/",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }
