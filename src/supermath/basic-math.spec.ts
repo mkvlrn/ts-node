@@ -1,4 +1,4 @@
-import { BasicMath } from '#supermath/basic-math';
+import { BasicMath } from '#/supermath/basic-math';
 
 describe('AdvancedMath', () => {
   const sut = new BasicMath();
