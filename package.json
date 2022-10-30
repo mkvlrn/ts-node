@@ -8,7 +8,7 @@
   "scripts": {
     "prebuild": "npx rimraf build",
     "build": "npx tsc -p tsconfig.build.json && npx tsc-alias -p tsconfig.build.json",
-    "dev": "npx nodemon --ext ts --exec ts-node src/index.ts",
+    "dev": "npx nodemon src/index.ts",
     "start": "node build",
     "test": "jest",
     "prepare": "npx husky install"
