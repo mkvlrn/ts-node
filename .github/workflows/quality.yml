@@ -38,6 +38,7 @@ jobs:
         with:
           name: artifact
           path: .
+      - name: check artifact
         run: ls -R
       - name: trigger scan
         uses: sonarsource/sonarcloud-github-action@master
