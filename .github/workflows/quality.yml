@@ -38,15 +38,15 @@ jobs:
         with:
           name: artifact
           path: ./coverage
-      - name: check artifact
-        run: ls -R
       - name: trigger scan
         uses: sonarsource/sonarcloud-github-action@master
         with:
           args: >
             -Dsonar.organization=mkvlrn-sonar
             -Dsonar.projectKey=mkvlrn_ts-node
+            -Dsonar.language=ts
             -Dsonar.sources=./src
+            -Dsonar.coverage.exclusions=**/*.spec.ts,**/.spec.tsx,**/index.ts,**/index.tsx
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
