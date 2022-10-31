@@ -37,7 +37,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: artifact
-          path: .
+          path: ./coverage
       - name: check artifact
         run: ls -R
       - name: trigger scan
