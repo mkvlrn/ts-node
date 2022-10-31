@@ -15,6 +15,8 @@ const config: Config = {
   transform: {
     '^.+.(png|svg|jpg|gif|webp)$': 'jest-transform-stub',
   },
+  coverageDirectory: 'coverage',
+  collectCoverageFrom: ['./src/**/*.{ts,tsx}', '!**/index.{ts,tsx}'],
 };
 
 export default config;
