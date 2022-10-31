@@ -43,7 +43,7 @@ jobs:
           args: >
             -Dsonar.organization=mkvlrn-sonar
             -Dsonar.projectKey=mkvlrn_ts-node
-            -Dsonar.sources=.
+            -Dsonar.sources=./src
             -Dsonar.javascript.lcov.reportPaths=./coverage/lcov.info
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
