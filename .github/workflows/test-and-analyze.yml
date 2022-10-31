@@ -1,4 +1,4 @@
-name: quality
+name: test-and-analyze
 on:
   push:
     branches:
