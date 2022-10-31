@@ -37,6 +37,8 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: artifact
+          path: .
+        run: ls -R
       - name: trigger scan
         uses: sonarsource/sonarcloud-github-action@master
         with:
@@ -44,7 +46,7 @@ jobs:
             -Dsonar.organization=mkvlrn-sonar
             -Dsonar.projectKey=mkvlrn_ts-node
             -Dsonar.sources=./src
-            -Dsonar.javascript.lcov.reportPaths=./coverage/lcov.info
+            -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
