@@ -1,11 +1,11 @@
 {
   "*.(ts|tsx)": [
-    "npx tsc-files",
-    "npx eslint --fix",
-    "npx prettier --write",
+    "yarn tsc-files",
+    "yarn eslint --fix",
+    "yarn prettier --write",
     "yarn test:ci"
   ],
   "*.json": [
-    "npx prettier --write"
+    "yarn prettier --write"
   ]
 }
