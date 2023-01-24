@@ -9,7 +9,8 @@
       {
         "useESM": true
       }
-    ]
+    ],
+    "^.+.(png|svg|jpg|gif|webp)$": "jest-transform-stub"
   },
   "passWithNoTests": true,
   "extensionsToTreatAsEsm": [
