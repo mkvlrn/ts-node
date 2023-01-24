@@ -1,4 +1,4 @@
-import { AdvancedMath } from '#/supermath/advanced-math';
+import { AdvancedMath } from './supermath/advanced-math.js';
 
 const math = new AdvancedMath();
 

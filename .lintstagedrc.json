@@ -3,7 +3,7 @@
     "npx tsc-files",
     "npx eslint --fix",
     "npx prettier --write",
-    "npx jest --bail --findRelatedTests"
+    "yarn test:ci"
   ],
   "*.json": [
     "npx prettier --write"
