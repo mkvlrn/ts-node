@@ -13,15 +13,9 @@
     "^.+.(png|svg|jpg|gif|webp)$": "jest-transform-stub"
   },
   "passWithNoTests": true,
-  "extensionsToTreatAsEsm": [
-    ".ts",
-    ".tsx"
-  ],
+  "extensionsToTreatAsEsm": [".ts", ".tsx"],
   "testRegex": ".(spec|test).(ts|tsx)$",
   "testEnvironment": "node",
   "coverageDirectory": "coverage",
-  "collectCoverageFrom": [
-    "./src/**/*.{ts,tsx}",
-    "!**/index.{ts,tsx}"
-  ]
+  "collectCoverageFrom": ["./src/**/*.{ts,tsx}", "!**/index.{ts,tsx}"]
 }

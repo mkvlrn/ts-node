@@ -1,11 +1,4 @@
 {
-  "*.(ts|tsx)": [
-    "yarn tsc-files",
-    "yarn eslint --fix",
-    "yarn prettier --write",
-    "yarn test:ci"
-  ],
-  "*.json": [
-    "yarn prettier --write"
-  ]
+  "*.(ts|tsx)": ["yarn tsc-files", "yarn eslint --fix", "yarn prettier --write", "yarn test:ci"],
+  "*.json": ["yarn prettier --write"]
 }

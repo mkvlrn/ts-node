@@ -5,28 +5,9 @@
   "endOfLine": "lf",
   "trailingComma": "all",
   "jsxSingleQuote": true,
-  "overrides": [
-    {
-      "files": [
-        "*.json",
-        "*.jsonc",
-        ".*rc"
-      ],
-      "options": {
-        "parser": "json-stringify"
-      }
-    }
-  ],
-  "importOrder": [
-    "^#(.*)/",
-    "^[./]"
-  ],
+  "importOrder": ["^#(.*)/", "^[./]"],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
   "importOrderCaseInsensitive": true,
-  "importOrderParserPlugins": [
-    "typescript",
-    "jsx",
-    "decorators-legacy"
-  ]
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"]
 }
