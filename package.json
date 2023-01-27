@@ -13,7 +13,9 @@
     "start": "node build",
     "test": "yarn node --experimental-vm-modules $(yarn bin jest)",
     "test:ci": "cross-env NODE_OPTIONS=--experimental-vm-modules yarn jest --bail --findRelatedTests",
-    "prepare": "yarn husky install"
+    "prepare": "yarn husky install",
+    "lint": "yarn eslint --fix",
+    "format": "yarn prettier --write"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
