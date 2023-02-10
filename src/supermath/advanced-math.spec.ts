@@ -1,17 +1,17 @@
 import { AdvancedMath } from '#/supermath/advanced-math.js';
 
 describe('AdvancedMath', () => {
-  const sut = new AdvancedMath();
+  const math = new AdvancedMath();
 
   test('multiply', () => {
-    expect(sut.multiply(2, 3)).toBe(6);
+    expect(math.multiply(2, 3)).toBe(6);
   });
 
   test('divide', () => {
-    expect(sut.divide(6, 3)).toBe(2);
+    expect(math.divide(6, 3)).toBe(2);
   });
 
   test('divide by zero throws', () => {
-    expect(() => sut.divide(2, 0)).toThrow('nope');
+    expect(() => math.divide(2, 0)).toThrow('nope');
   });
 });

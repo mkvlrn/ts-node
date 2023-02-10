@@ -1,5 +1,9 @@
 export class BasicMath {
-  sum = (a: number, b: number) => a + b;
+  sum(a: number, b: number) {
+    return a + b;
+  }
 
-  subtract = (a: number, b: number) => a - b;
+  subtract(a: number, b: number) {
+    return a - b;
+  }
 }
