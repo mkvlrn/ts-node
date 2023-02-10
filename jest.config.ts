@@ -15,6 +15,7 @@ const config: Config = {
   coverageDirectory: 'coverage',
   collectCoverageFrom: ['<rootDir>/src/**/*.{ts,tsx}'],
   coverageProvider: 'v8',
+  setupFiles: ['<rootDir>/jest.setup.ts'],
 };
 
 export default config;
