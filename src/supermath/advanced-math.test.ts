@@ -1,19 +1,18 @@
-import { describe, expect, it } from 'vitest';
-
+import { describe, expect, test } from 'vitest';
 import { AdvancedMath } from '#/supermath/advanced-math.js';
 
 describe('advancedMath', () => {
   const math = new AdvancedMath();
 
-  it('multiplies', () => {
+  test('multiplies', () => {
     expect(math.multiply(2, 3)).toBe(6);
   });
 
-  it('divides', () => {
+  test('divides', () => {
     expect(math.divide(6, 3)).toBe(2);
   });
 
-  it('throws when attempting to divide by zero', () => {
+  test('throws when attempting to divide by zero', () => {
     expect(() => math.divide(2, 0)).toThrow('nope');
   });
 });

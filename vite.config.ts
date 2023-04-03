@@ -2,10 +2,16 @@ import { resolve } from 'path';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
-  test: {
+  root: './src',
+  resolve: {
     alias: { '#': resolve(__dirname, './src') },
-    coverage: { reportsDirectory: 'coverage', include: ['src/**'], reporter: ['lcov', 'html'] },
+  },
+  test: {
+    coverage: { reportsDirectory: '../coverage', reporter: ['lcov', 'html', 'text'] },
     environment: 'node',
     passWithNoTests: true,
+  },
+  server: {
+    watch: { ignored: ['**/*.test.ts'] },
   },
 });
