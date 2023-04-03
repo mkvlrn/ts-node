@@ -10,6 +10,7 @@ export default defineConfig({
     coverage: { reportsDirectory: '../coverage', reporter: ['lcov', 'html', 'text'] },
     environment: 'node',
     passWithNoTests: true,
+    setupFiles: ['../vitest.setup.ts'],
   },
   server: {
     watch: { ignored: ['**/*.test.ts'] },
