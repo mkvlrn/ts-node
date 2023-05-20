@@ -1851,6 +1851,10 @@ eslint-config-airbnb@^19.0.4:
     object.assign "^4.1.2"
     object.entries "^1.1.5"
 
+eslint-config-mkvlrn@mkvlrn/eslint-config-mkvlrn#v1.0.1:
+  version "1.0.1"
+  resolved "https://codeload.github.com/mkvlrn/eslint-config-mkvlrn/tar.gz/0ebd74536d839d3d6873d36e54350620fef3d21c"
+
 eslint-config-prettier@^8.8.0:
   version "8.8.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.8.0.tgz#bfda738d412adc917fd7b038857110efe98c9348"
@@ -3541,6 +3545,10 @@ prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
+
+prettier-config-mkvlrn@mkvlrn/prettier-config-mkvlrn#v1.0.1:
+  version "1.0.1"
+  resolved "https://codeload.github.com/mkvlrn/prettier-config-mkvlrn/tar.gz/74db851f9610fc42fb733b8d914d9311391dca15"
 
 prettier@^2.8.8:
   version "2.8.8"
