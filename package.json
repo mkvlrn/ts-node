@@ -49,5 +49,31 @@
     "tsx": "^3.12.7",
     "typescript": "^5.0.4",
     "vitest": "^0.31.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "mkvlrn"
+    ]
+  },
+  "prettier": "prettier-config-mkvlrn",
+  "lint-staged": {
+    "*.(ts|tsx)": [
+      "yarn check-types",
+      "yarn lint",
+      "yarn format",
+      "yarn test-staged"
+    ],
+    "*.json": [
+      "yarn format"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
