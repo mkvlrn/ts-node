@@ -3,6 +3,6 @@
   "compilerOptions": {
     "rootDir": "src"
   },
-  "include": ["src"],
+  "include": ["src/**/*"],
   "exclude": ["./src/**/*.test.ts", "./src/**/*.test.tsx", "vite.config.ts", "vitest.setupt.ts"]
 }
