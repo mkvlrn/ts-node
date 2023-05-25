@@ -1,9 +1,7 @@
-export class BasicMath {
-  sum(a: number, b: number) {
-    return a + b;
-  }
+export function sum(a: number, b: number) {
+  return a + b;
+}
 
-  subtract(a: number, b: number) {
-    return a - b;
-  }
+export function subtract(a: number, b: number) {
+  return a - b;
 }
