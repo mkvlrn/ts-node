@@ -13,6 +13,9 @@ export default defineConfig({
       include: ['src/**/*'],
       exclude: ['src/index.ts', '**/*.test.ts', '**/*.d.ts'],
     },
+    env: {
+      NODE_ENV: 'test',
+    },
     environment: 'node',
     passWithNoTests: true,
     setupFiles: ['vitest.setup.ts'],
