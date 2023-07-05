@@ -17,11 +17,10 @@ jobs:
         with:
           fetch-depth: 0
       - name: install dependencies
-        run: yarn install
+        run: pnpm install
       - name: run tests
-        run: yarn test-cov
+        run: pnpm test-cov
       - name: code climate
         uses: paambaati/codeclimate-action@v4.0.0
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-
