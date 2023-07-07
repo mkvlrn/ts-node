@@ -683,20 +683,20 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@mkvlrn/eslint-config@^2023.7.7-0":
-  version "2023.7.7-0"
-  resolved "https://registry.yarnpkg.com/@mkvlrn/eslint-config/-/eslint-config-2023.7.7-0.tgz#f66df3f2772fe6f4fd89b788f048466f3144f51b"
-  integrity sha512-ZyHiVk+eBcZ5HLsCIfhrpGnHmxLxmBh4T+LzUdZshf5bPgid8AnROxZQZPnK+QOyiftyhGnbX54+yh7xbCpP2w==
+"@mkvlrn/eslint-config@^23.7.7-0":
+  version "23.7.7-0"
+  resolved "https://registry.yarnpkg.com/@mkvlrn/eslint-config/-/eslint-config-23.7.7-0.tgz#5d488bed3d4dcaed1dc1ffd47623e52ca228856f"
+  integrity sha512-P5m934MFE3vxE2repxjV4e0UOZXMnPLCIzHphrsZ80gQChFFH2YnRYbxBSORjXZbSUJlP0iwCjJ796u0DP1DTg==
 
-"@mkvlrn/prettier-config@^2023.7.7-0":
-  version "2023.7.7-0"
-  resolved "https://registry.yarnpkg.com/@mkvlrn/prettier-config/-/prettier-config-2023.7.7-0.tgz#147f9b65bf624b0fa1bb64902cb1e55b28d3b2d1"
-  integrity sha512-FLK27DgFlbP0lorxmsv/KL+7TnkPHLqwXAMlOAuVg+lkeCqkwombR5HbSVI/Du9bOSU+v7nxBpgWVZBQuU+t0w==
+"@mkvlrn/prettier-config@^23.7.7-0":
+  version "23.7.7-0"
+  resolved "https://registry.yarnpkg.com/@mkvlrn/prettier-config/-/prettier-config-23.7.7-0.tgz#4824ee2d50905f6f129dc2ae2b617189716fda11"
+  integrity sha512-DpPM1R6EZlTGVPR7Z+nj0/y6nNWQ9bLWjOXdJDKGEEBCZR+bSDurAIyFbxTfo84TjGRKezLC/ogZ+Aj7dLuaJw==
 
-"@mkvlrn/tsconfig@^2023.7.7-8":
-  version "2023.7.7-8"
-  resolved "https://registry.yarnpkg.com/@mkvlrn/tsconfig/-/tsconfig-2023.7.7-8.tgz#2949312731e4e7b6cc068897897f72ec5e7b8782"
-  integrity sha512-q0YnlAGhYbAS8A8agMukAAxsQr6bN7k/VwFHnc8xZyLkBrVJW776Q2WLMK3jN8MmqqhlBVQFrp9z1xrIGTYnrw==
+"@mkvlrn/tsconfig@^23.7.7-0":
+  version "23.7.7-0"
+  resolved "https://registry.yarnpkg.com/@mkvlrn/tsconfig/-/tsconfig-23.7.7-0.tgz#3a4b0ac847fdb9bbc1ef7dee44ecaae7988b7326"
+  integrity sha512-QaYNm69ZxlQRdYc1Hq4c2lUpdIfmXpM5+UGhek8uy1IAbM5RTekYDROJZJ44gOqBVcQgW9W1hsGV6z25NxpjFA==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
