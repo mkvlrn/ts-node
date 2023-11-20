@@ -1,4 +1,4 @@
-import { multiply } from '#/supermath/advanced-math.js';
+import { multiply } from '#/supermath/advanced-math';
 
 const result = multiply(210, 2);
 

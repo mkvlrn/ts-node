@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { divide, multiply } from '#/supermath/advanced-math.js';
+import { divide, multiply } from '#/supermath/advanced-math';
 
 test('multiplies', () => {
   expect(multiply(2, 3)).toBe(6);

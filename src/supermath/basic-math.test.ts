@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { subtract, sum } from '#/supermath/basic-math.js';
+import { subtract, sum } from '#/supermath/basic-math';
 
 test('sums', () => {
   expect(sum(2, 2)).toBe(4);
