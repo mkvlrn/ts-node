@@ -27,4 +27,8 @@ jobs:
       - name: run biome
         run: yarn format-lint ./src
       - name: run tests
-        run: yarn test
+        run: yarn test-cov
+      - name: coverage
+        uses: paambaati/codeclimate-action@v5.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}

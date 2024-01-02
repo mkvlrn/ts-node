@@ -1,11 +1,10 @@
-import assert from 'node:assert';
-import { test } from 'node:test';
+import { expect, test } from 'vitest';
 import { subtract, sum } from '#/supermath/basic-math.js';
 
 test('sums', () => {
-  assert.strictEqual(sum(2, 2), 4);
+  expect(sum(1, 2)).toBe(3);
 });
 
 test('subtracts', () => {
-  assert.strictEqual(subtract(70, 1), 69);
+  expect(subtract(70, 1)).toBe(69);
 });

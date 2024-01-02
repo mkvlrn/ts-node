@@ -1,15 +1,14 @@
-import assert from 'node:assert';
-import { test } from 'node:test';
+import { expect, test } from 'vitest';
 import { divide, multiply } from '#/supermath/advanced-math.js';
 
 test('multiplies', () => {
-  assert.strictEqual(multiply(2, 3), 6);
+  expect(multiply(2, 3)).toBe(6);
 });
 
 test('divides', () => {
-  assert.strictEqual(divide(6, 3), 2);
+  expect(divide(6, 3)).toBe(2);
 });
 
 test('throws when attempting to divide by zero', () => {
-  assert.throws(() => divide(2, 0), { message: 'nope' });
+  expect(() => divide(6, 0)).toThrow('nope');
 });
