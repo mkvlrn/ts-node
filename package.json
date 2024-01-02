@@ -1,12 +1,12 @@
 {
   "name": "ts-node",
-  "version": "1.0.0",
-  "main": "build/index.js",
   "repository": "git@github.com:mkvlrn/ts-node",
   "author": "Mike Valeriano <mkvlrn@gmail.com>",
-  "license": "MIT",
   "type": "module",
   "module": "build/index.js",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "yarn tsx watch --ignore **/*.test.ts src/index.ts",
     "build": "yarn tsx scripts/build.ts",
