@@ -13,18 +13,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: setup node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20
       - name: install dependencies
         run: yarn install
+      - name: check types
+        run: yarn check-types ./src/**/*.ts
+      - name: run biome
+        run: yarn format-lint ./src
       - name: run tests
-        run: yarn test-cov
-      - name: code climate
-        uses: paambaati/codeclimate-action@v4.0.0
-        env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        run: yarn test
