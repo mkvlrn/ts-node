@@ -1,3 +1,3 @@
 {
-  "*.(ts|tsx)": ["yarn type-check", "yarn format-lint"]
+  "*.(ts|tsx)": ["yarn type-check", "yarn format-lint", "yarn test-staged"]
 }
