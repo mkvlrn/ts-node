@@ -1,12 +1,12 @@
 {
   "name": "ts-node",
-  "version": "1.0.0",
-  "main": "build/index.js",
   "repository": "git@github.com:mkvlrn/ts-node",
   "author": "Mike Valeriano <mkvlrn@gmail.com>",
-  "license": "MIT",
   "type": "module",
   "module": "build/index.js",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "esbuild ./src/*.ts ./src/**/*.ts --outdir=./build --platform=node --target=node20 --format=esm",
     "postbuild": "yarn tsc-alias && find ./build -name '*.test.js' -type f -delete",
