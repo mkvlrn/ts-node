@@ -23,9 +23,11 @@ jobs:
       - name: install dependencies
         run: yarn install
       - name: check types
-        run: yarn type-check ./src/**/*.ts
-      - name: run biome
-        run: yarn format-lint ./src
+        run: yarn tsc-files ./src/**/*.ts
+      - name: lint
+        run: yarn eslint --fix ./src
+      - name: format
+        run: yarn prettier --write ./src
       - name: run tests
         run: yarn test-cov
       - name: coverage

@@ -1,7 +1,6 @@
 import { resolve } from 'node:path';
 import { defineConfig } from 'vitest/config';
 
-// biome-ignore lint/nursery/noDefaultExport: vite.config.ts is a config file
 export default defineConfig({
   resolve: {
     alias: { '#': resolve('.', './src') },
@@ -15,7 +14,6 @@ export default defineConfig({
       exclude: ['src/index.ts', '**/*.test.ts', '**/*.d.ts'],
     },
     env: {
-      // biome-ignore lint/style/useNamingConvention: convention
       NODE_ENV: 'test',
     },
     environment: 'node',

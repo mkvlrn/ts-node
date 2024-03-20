@@ -1,3 +1,4 @@
 {
-  "*.(ts|tsx)": ["yarn type-check", "yarn format-lint", "yarn test-staged"]
+  "*.(ts|tsx)": ["tsc-files", "eslint --fix", "prettier --write", "vitest related --run"],
+  "*.(json)": ["prettier --write"]
 }

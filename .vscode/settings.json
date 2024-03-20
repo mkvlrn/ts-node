@@ -1,15 +1,20 @@
 {
   "[javascript][typescript][javascriptreact][typescriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
-    "quickfix.biome": "explicit",
     "source.fixAll": "explicit"
   },
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
-  "eslint.enable": false,
+  "editor.rulers": [100],
+  "editor.wordWrapColumn": 100,
+  "editor.wordWrap": "wordWrapColumn",
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.suggest.paths": true,
+  "typescript.preferences.importModuleSpecifierEnding": "js",
   "typescript.tsdk": "./node_modules/typescript/lib"
 }
